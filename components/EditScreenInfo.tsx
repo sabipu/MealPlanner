@@ -8,7 +8,7 @@ import { Text, View } from './Themed';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.getStartedContainer}>
         <Text
           style={styles.getStartedText}
@@ -32,13 +32,13 @@ export default function EditScreenInfo({ path }: { path: string }) {
         </Text>
       </View>
 
-      <View style={styles.helpContainer}>
+      {/* <View style={styles.helpContainer}>
         <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
           <Text style={styles.helpLinkText} lightColor={Colors.light.tint}>
             Tap here if your app doesn't automatically update after making changes
           </Text>
         </TouchableOpacity>
-      </View>
+      </View> */}
     </View>
   );
 }
@@ -52,7 +52,7 @@ function handleHelpPress() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f8f8f8',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -76,8 +76,10 @@ const styles = StyleSheet.create({
     marginLeft: -10,
   },
   getStartedContainer: {
+    backgroundColor: '#fff',
     alignItems: 'center',
-    marginHorizontal: 50,
+    padding: 35,
+    margin: 20
   },
   homeScreenFilename: {
     marginVertical: 7,

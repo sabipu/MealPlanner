@@ -8,22 +8,22 @@ export default {
         screens: {
           Workout: {
             screens: {
-              Workout: 'one',
+              Workout: 'workout',
             },
           },
           Meals: {
             screens: {
-              Meals: 'two',
+              Meals: 'meals',
             },
           },
           Explore: {
             screens: {
-              Explore: 'three',
+              Explore: 'explore',
             },
           },
           Me: {
             screens: {
-              Me: 'four',
+              Me: 'profile',
             },
           }
         },
