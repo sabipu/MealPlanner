@@ -6,16 +6,26 @@ export default {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          Workout: {
             screens: {
-              TabOneScreen: 'one',
+              Workout: 'one',
             },
           },
-          TabTwo: {
+          Meals: {
             screens: {
-              TabTwoScreen: 'two',
+              Meals: 'two',
             },
           },
+          Explore: {
+            screens: {
+              Explore: 'three',
+            },
+          },
+          Me: {
+            screens: {
+              Me: 'four',
+            },
+          }
         },
       },
       NotFound: '*',
